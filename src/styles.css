@@ -18,6 +18,7 @@
   --border: #dce4ed;
   --shadow: 0 18px 55px rgba(34, 63, 93, .11);
   --radius: 22px;
+  --radius-small: 11px;
 }
 
 * {
@@ -533,13 +534,13 @@ p {
 
 .definition-image {
   overflow: hidden;
-  border-radius: var(--radius);
+  border-radius: var(--radius-small);
   box-shadow: var(--shadow);
 }
 
 .definition-image img {
   width: 100%;
-  height: 520px;
+  height: 600px;
   object-fit: cover;
 }
 

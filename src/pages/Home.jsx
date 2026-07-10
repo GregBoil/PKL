@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Icon from '../components/Icon'
-import { audiences, benefits, trainings } from '../data'
+import { trainings } from '../data'
 
 function SectionHeading({ eyebrow, title, text, center = false }) {
   return (
@@ -109,13 +109,21 @@ export default function Home() {
 
             <div className="definition-copy">
               <p>
-                L’habilitation électrique est la reconnaissance, par
-                l’employeur, de la capacité d’un salarié à accomplir en sécurité
-                les tâches qui lui sont confiées vis-à-vis du risque électrique.
+                L’habilitation électrique reconnaît la capacité d’un salarié à
+                réaliser ses missions en sécurité face au risque électrique. Elle
+                est délivrée par l’employeur, en fonction du poste, des tâches
+                confiées et de l’environnement de travail.
               </p>
               <p>
-                Elle s’appuie sur les dispositions du <strong>Code du travail</strong>
-                {' '}et sur les règles techniques de la norme{' '}
+                La formation s’adresse aux personnes amenées à intervenir sur ou
+                à proximité d’installations électriques : techniciens, agents de
+                maintenance, personnels d’exploitation, encadrants ou
+                intervenants non électriciens exposés dans leur activité.
+              </p>
+              <p>
+                Former vos équipes permet de clarifier les gestes autorisés, de
+                réduire les situations à risque et de répondre aux obligations du
+                <strong> Code du travail</strong> et de la norme{' '}
                 <strong>NF C 18-510</strong>.
               </p>
             </div>
@@ -139,48 +147,6 @@ export default function Home() {
               src="/comp_2.jpg"
               alt="Intervention professionnelle liée à la prévention du risque électrique"
             />
-          </div>
-        </div>
-      </section>
-
-      <section className="section audience-section">
-        <div className="container">
-          <SectionHeading
-            eyebrow="Publics concernés"
-            title="Des formations pour les métiers exposés"
-            text="Toute personne susceptible d’intervenir sur ou à proximité d’une installation électrique peut être concernée, selon la nature de ses tâches."
-            center
-          />
-
-          <div className="audience-cloud">
-            {audiences.map((audience) => (
-              <span key={audience}>
-                <Icon name="check" size={16} />
-                {audience}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <SectionHeading
-            eyebrow="Vos enjeux"
-            title="Pourquoi former vos équipes ?"
-            text="Une démarche structurée pour protéger les personnes, maîtriser les risques et répondre aux obligations de l’entreprise."
-          />
-
-          <div className="benefits-grid">
-            {benefits.map((benefit) => (
-              <article className="benefit-card" key={benefit.title}>
-                <span className="card-icon">
-                  <Icon name={benefit.icon} size={27} />
-                </span>
-                <h3>{benefit.title}</h3>
-                <p>{benefit.text}</p>
-              </article>
-            ))}
           </div>
         </div>
       </section>

@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import Icon from '../components/Icon'
 import { trainings } from '../data'
 
+const assetPath = (path) => `${import.meta.env.BASE_URL}${path}`
+
 function SectionHeading({ eyebrow, title, text, center = false }) {
   return (
     <div className={`section-heading ${center ? 'center' : ''}`}>
@@ -15,7 +17,10 @@ function SectionHeading({ eyebrow, title, text, center = false }) {
 export default function Home() {
   return (
     <>
-      <section className="hero">
+      <section
+        className="hero"
+        style={{ '--hero-image': `url(${assetPath('hero_1.jpg')})` }}
+      >
         <div className="hero-glow" />
         <div className="container hero-grid">
           <div className="hero-content">
@@ -66,7 +71,7 @@ export default function Home() {
             <div className="portrait-accent" />
             <div className="portrait-card">
               <img
-                src="/PierreKlein.png"
+                src={assetPath('PierreKlein.png')}
                 alt="Pierre Klein, formateur en habilitation électrique"
                 onError={(event) => {
                   event.currentTarget.style.display = 'none'
@@ -144,7 +149,7 @@ export default function Home() {
 
           <div className="definition-image">
             <img
-              src="/comp_2.jpg"
+              src={assetPath('comp_2.jpg')}
               alt="Intervention professionnelle liée à la prévention du risque électrique"
             />
           </div>
@@ -155,7 +160,7 @@ export default function Home() {
         <div className="container professional-grid">
           <div className="professional-photo">
             <img
-              src="/PierreKlein.png"
+              src={assetPath('PierreKlein.png')}
               alt="Pierre Klein, formateur en habilitation électrique"
             />
           </div>

@@ -282,7 +282,7 @@ p {
       rgba(250,251,252,.88) 48%,
       rgba(250,251,252,.62) 70%
     ),
-    url('/hero_1.jpg') center / cover no-repeat;
+    var(--hero-image) center / cover no-repeat;
 }
 
 .hero::before {

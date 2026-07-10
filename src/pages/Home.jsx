@@ -151,6 +151,47 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section professional-section">
+        <div className="container professional-grid">
+          <div className="professional-photo">
+            <img
+              src="/PierreKlein.png"
+              alt="Pierre Klein, formateur en habilitation électrique"
+            />
+          </div>
+
+          <div className="professional-content">
+            <SectionHeading
+              eyebrow="Le professionnel"
+              title="Un formateur issu du terrain"
+            />
+
+            <div className="professional-copy">
+              <p>
+                Pierre Klein est formateur indépendant en habilitations
+                électriques BT/HT. Avant de transmettre, il a exercé pendant
+                près de vingt ans dans des environnements techniques :
+                maintenance industrielle, équipements électriques, suivi
+                d’interventions et contraintes de chantier.
+              </p>
+              <p>
+                Ce parcours lui permet d’aborder la sécurité électrique avec des
+                exemples concrets, proches des situations rencontrées par les
+                équipes. L’objectif n’est pas seulement de connaître les règles,
+                mais de comprendre comment les appliquer avec discernement dans
+                le travail quotidien.
+              </p>
+            </div>
+
+            <div className="professional-highlights">
+              <span>BTS électrotechnique</span>
+              <span>Expérience maintenance</span>
+              <span>Approche terrain</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section trainings-preview">
         <div className="container">
           <div className="heading-row">

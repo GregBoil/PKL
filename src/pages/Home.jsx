@@ -241,10 +241,10 @@ export default function Home() {
         <div className="container cta-card">
           <div>
             <span className="eyebrow eyebrow-light">Un besoin spécifique ?</span>
-            <h2>Construisons une formation adaptée à vos équipes.</h2>
+            <h2>Des formations adaptées à vos interventions.</h2>
             <p>
-              Échangeons sur vos métiers, vos contraintes et les situations de
-              travail rencontrées.
+              Préparez vos équipes aux risques électriques avec des formations conformes
+               à la réglementation et adaptées à vos conditions de travail.
             </p>
           </div>
 

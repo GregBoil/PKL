@@ -11,8 +11,8 @@ export function Header() {
     <header className="site-header">
       <div className="container nav-wrap">
         <Link className="brand" to="/" aria-label="Pierre Klein Formation, accueil">
-          <span className="brand-mark"><Icon name="bolt" size={20} /></span>
-          <span><strong>PKL</strong> Formation</span>
+          {/*<span className="brand-mark"><Icon name="bolt" size={20} /></span>*/}
+          <span className="brand-text"><strong>PKL</strong> Formation</span>
         </Link>
         <button className="menu-button" onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="main-navigation" aria-label="Ouvrir le menu">
           <Icon name={open ? 'close' : 'menu'} />
@@ -33,7 +33,7 @@ export function Footer() {
     <footer className="site-footer">
       <div className="container footer-grid">
         <div>
-          <Link className="brand brand-light" to="/"><span className="brand-mark"><Icon name="bolt" size={20} /></span><span><strong>PKL</strong> Formation</span></Link>
+          <Link className="brand brand-light" to="/">{/*<span className="brand-mark"><Icon name="bolt" size={20} /></span>*/}<span className="brand-text"><strong>PKL</strong> Formation</span></Link>
           <p>Formation et accompagnement à la prévention du risque électrique pour les entreprises et les professionnels.</p>
         </div>
         <div className="footer-links"><strong>Navigation</strong><Link to="/">Accueil</Link><Link to="/formations">Formations</Link><Link to="/contact">Contact</Link></div>

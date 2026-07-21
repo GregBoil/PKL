@@ -134,6 +134,10 @@ p {
   border-radius: 11px;
 }
 
+.brand-text {
+    font-size: 1.5rem;
+  }
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -824,7 +828,7 @@ p {
   gap: 45px;
   overflow: hidden;
   position: relative;
-  background: #2a5f9f;
+  background: var(--blue);
   border-radius: 24px;
   box-shadow: 0 20px 50px rgba(42,95,159,.2);
 }
@@ -846,7 +850,7 @@ p {
 }
 
 .eyebrow-light {
-  color: #bcd9fc;
+  color: var(--yellow);
 }
 
 .cta-card.compact {

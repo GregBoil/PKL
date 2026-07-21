@@ -196,7 +196,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      {/*
       <section className="section trainings-preview">
         <div className="container">
           <div className="heading-row">
@@ -241,6 +241,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
 
       <section className="section cta-section">
         <div className="container cta-card">

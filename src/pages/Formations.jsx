@@ -25,6 +25,7 @@ const choiceSteps = [
 export default function Formations() {
   const [active, setActive] = useState(0)
   const training = trainings[active]
+  const programUrl = `${import.meta.env.BASE_URL}Formation_1.pdf`
 
   return (
     <>
@@ -69,13 +70,15 @@ export default function Formations() {
                 </span>
               </div>
 
-              <button
-                className="button button-disabled"
-                disabled
-                title="Programme bientôt disponible"
+              <a
+                className="button button-primary"
+                href={programUrl}
+                target="_blank"
+                rel="noreferrer"
               >
-                Programme PDF bientôt disponible
-              </button>
+                Voir le programme PDF
+                <Icon name="document" size={18} />
+              </a>
             </div>
 
             <div className="detail-grid">

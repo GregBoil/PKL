@@ -45,6 +45,15 @@ export function Footer() {
   )
 }
 
-export function PageHero({ eyebrow, title, text, children }) {
-  return <section className="page-hero"><div className="container"><span className="eyebrow">{eyebrow}</span><h1>{title}</h1><p>{text}</p>{children}</div></section>
+export function PageHero({ eyebrow, title, text, children, className = '', style }) {
+  return (
+    <section className={`page-hero ${className}`} style={style}>
+      <div className="container">
+        <span className="eyebrow">{eyebrow}</span>
+        <h1>{title}</h1>
+        <p>{text}</p>
+        {children}
+      </div>
+    </section>
+  )
 }

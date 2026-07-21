@@ -49,7 +49,7 @@ export default function Formations() {
                 role="tab"
                 aria-selected={active === index}
               >
-                <span>0{index + 1}</span>
+                {/*<span>0{index + 1}</span>*/}
                 {item.title}
               </button>
             ))}

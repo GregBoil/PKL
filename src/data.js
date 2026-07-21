@@ -17,17 +17,22 @@ export const benefits = [
 
 export const trainings = [
   {
-    id: 'formation-1',
-    eyebrow: 'Parcours 01',
-    title: 'Formation 1',
-    summary: 'Un parcours à définir selon les tâches confiées et l’exposition au risque électrique.',
-    audience: 'Public concerné à définir après analyse des postes et des missions.',
-    objectives: ['Comprendre les principes de prévention du risque électrique.', 'Adopter une conduite adaptée aux opérations confiées.', 'Identifier les limites de son intervention.'],
-    prerequisites: 'À préciser selon le niveau et les opérations visées.',
-    duration: 'À préciser',
-    methods: 'Apports structurés, échanges de pratiques et mises en situation adaptées au contexte professionnel.',
-    evaluation: 'Évaluation théorique et pratique selon les objectifs du parcours.',
+    id: 'formation-b2v-br-bc-b0-h0v',
+    eyebrow: 'Habilitations électriques',
+    title: 'B2V, BR, BC, B0 et H0V',
+    summary: 'Formation préparatoire à l’habilitation électrique conformément à la norme NF C 18-510.',
+    audience: 'Personnel réalisant des travaux électriques, des interventions, des consignations ou des opérations non électriques à proximité d’installations électriques.',
+    objectives: [
+      'Identifier les risques électriques et appliquer les mesures de prévention adaptées.',
+      'Réaliser les opérations confiées dans le respect des prescriptions de sécurité.',
+      'Connaître les limites associées à son niveau d’habilitation.',
+    ],
+    prerequisites: 'Connaissances de base en électricité pour les habilitations B2V, BR et BC. Aucun prérequis électrique pour B0 et H0V.',
+    duration: 'Initiale : 21 h (3 jours) — Recyclage : 14 h (2 jours)',
+    methods: 'Apports théoriques, études de cas, échanges d’expériences et mises en situation pratiques.',
+    evaluation: 'QCM de validation des acquis et évaluation pratique adaptée aux habilitations préparées.',
   },
+  /*
   {
     id: 'formation-2',
     eyebrow: 'Parcours 02',
@@ -51,11 +56,11 @@ export const trainings = [
     duration: 'À préciser',
     methods: 'Alternance d’apports, retours d’expérience et situations pratiques.',
     evaluation: 'Évaluation des connaissances et des savoir-faire mobilisés.',
-  },
+  },*/
 ]
 
 export const contactDetails = [
-  { label: 'Téléphone', value: 'À compléter', icon: 'phone' },
-  { label: 'Email', value: 'À compléter', icon: 'mail' },
-  { label: 'Zone d’intervention', value: 'À compléter', icon: 'pin' },
+  { label: 'Téléphone', value: '06 72 60 90 05', icon: 'phone' },
+  { label: 'Email', value: 'contact@pklformation.fr', icon: 'mail' },
+  { label: 'Zone d’intervention', value: 'Marseille & alentours', icon: 'pin' },
 ]

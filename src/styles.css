@@ -198,14 +198,13 @@ p {
 }
 
 .button-primary {
-  color: var(--text);
-  background: var(--yellow);
+  color: var(--white);
+  background: var(--blue);
   box-shadow: 0 10px 24px rgba(58, 123, 213, .24);
 }
 
 .button-primary:hover {
   background: var(--blue-dark);
-  color: var(--white);
   box-shadow: 0 14px 28px rgba(58, 123, 213, .3);
 }
 
@@ -740,6 +739,16 @@ p {
 
 .trainings-preview h2, .trainings-preview p {
   color: var(--white);
+}
+
+.training-detail .button-primary {
+  background: var(--yellow);
+  color: var(--text)
+}
+
+.training-detail .button-primary:hover {
+  background: var(--blue);
+  color: var(--white)
 }
 
 .heading-row {

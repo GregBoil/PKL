@@ -67,7 +67,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: clamp(1rem, 5vw, 3rem);
+  font-size: clamp(1rem, 5vw, 4rem);
 }
 
 h2 {
@@ -312,7 +312,7 @@ p {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1.18fr .82fr;
+  grid-template-columns: 1.3fr .70fr;
   gap: 90px;
   align-items: center;
 }
@@ -498,8 +498,18 @@ p {
 }
 
 .definition-section {
-  background: var(--white);
+  background: var(--blue);
+
 }
+
+.definition-section .eyebrow {
+  color: var(--yellow);
+}
+
+.definition-section h2, .definition-section p {
+  color: var(--white);
+}
+
 
 .split-grid {
   display: grid;
@@ -510,10 +520,11 @@ p {
 
 .definition-copy p {
   font-size: 1.02rem;
+  color: var(--white)
 }
 
 .definition-copy strong {
-  color: var(--text);
+  color: var(--yellow);
 }
 
 .info-alert {
@@ -714,7 +725,16 @@ p {
 }
 
 .trainings-preview {
-  background: #f0f4f8;
+  background: var(--blue);
+}
+
+
+.trainings-preview .eyebrow {
+  color: var(--yellow);
+}
+
+.trainings-preview h2, .trainings-preview p {
+  color: var(--white);
 }
 
 .heading-row {

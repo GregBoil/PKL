@@ -4,11 +4,75 @@ import { PageHero } from '../components/Layout'
 import { contactDetails, trainings } from '../data'
 
 export default function Contact() {
-  const [sent, setSent] = useState(false)
+  const [formStatus, setFormStatus] = useState('idle')
+  const [formMessage, setFormMessage] = useState('')
+  const [fieldErrors, setFieldErrors] = useState({})
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
-    setSent(true)
+    setFormStatus('loading')
+    setFormMessage('')
+    setFieldErrors({})
+
+    const form = event.currentTarget
+    const formData = new FormData(form)
+    const payload = Object.fromEntries(formData.entries())
+    const errors = {}
+
+    if (!payload.name?.trim()) {
+      errors.name = 'Le nom est obligatoire.'
+    }
+
+    if (!payload.company?.trim()) {
+      errors.company = 'L’entreprise est obligatoire.'
+    }
+
+    if (!payload.email?.trim()) {
+      errors.email = 'L’e-mail est obligatoire.'
+    }
+
+    if (!payload.message?.trim()) {
+      errors.message = 'Le message est obligatoire.'
+    }
+
+    if (!payload.privacy) {
+      errors.privacy = 'Votre accord est nécessaire pour envoyer la demande.'
+    }
+
+    if (Object.keys(errors).length > 0) {
+      setFieldErrors(errors)
+      setFormStatus('idle')
+      setFormMessage('Merci de compléter les champs obligatoires.')
+      return
+    }
+
+    try {
+      const response = await fetch('/api/contact.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(payload),
+      })
+
+      const result = await response.json()
+
+      if (!response.ok || !result.success) {
+        setFieldErrors(result.errors || {})
+        throw new Error(result.message || 'Erreur lors de l’envoi.')
+      }
+
+      form.reset()
+      setFormStatus('success')
+      setFormMessage(result.message)
+    } catch (error) {
+      setFormStatus('error')
+      setFormMessage(
+        error.message ||
+          'Le message n’a pas pu être envoyé. Veuillez réessayer.'
+      )
+    }
   }
 
   return (
@@ -77,29 +141,42 @@ export default function Contact() {
               <p>Les champs marqués d’un * sont nécessaires.</p>
             </div>
 
-            {sent ? (
+            {formStatus === 'success' ? (
               <div className="success-message" role="status">
                 <span>
                   <Icon name="check" size={32} />
                 </span>
-                <h3>Votre demande est prête.</h3>
-                <p>
-                  Le formulaire est actuellement en mode démonstration. Il pourra
-                  être relié à votre solution d’envoi lors de la mise en ligne.
-                </p>
+                <h3>Votre demande a bien été envoyée.</h3>
+                <p>{formMessage}</p>
                 <button
                   className="button button-secondary"
-                  onClick={() => setSent(false)}
+                  onClick={() => {
+                    setFormStatus('idle')
+                    setFormMessage('')
+                    setFieldErrors({})
+                  }}
                 >
                   Nouvelle demande
                 </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit}>
+                <label className="honeypot-field" aria-hidden="true">
+                  Site web
+                  <input
+                    name="website"
+                    tabIndex="-1"
+                    autoComplete="off"
+                  />
+                </label>
+
                 <div className="form-grid">
                   <label>
                     Nom / prénom *
                     <input name="name" autoComplete="name" required />
+                    {fieldErrors.name && (
+                      <span className="field-error">{fieldErrors.name}</span>
+                    )}
                   </label>
 
                   <label>
@@ -109,6 +186,9 @@ export default function Contact() {
                       autoComplete="organization"
                       required
                     />
+                    {fieldErrors.company && (
+                      <span className="field-error">{fieldErrors.company}</span>
+                    )}
                   </label>
 
                   <label>
@@ -119,6 +199,9 @@ export default function Contact() {
                       autoComplete="email"
                       required
                     />
+                    {fieldErrors.email && (
+                      <span className="field-error">{fieldErrors.email}</span>
+                    )}
                   </label>
 
                   <label>
@@ -144,6 +227,11 @@ export default function Contact() {
                       min="1"
                       placeholder="Ex. 8"
                     />
+                    {fieldErrors.participants && (
+                      <span className="field-error">
+                        {fieldErrors.participants}
+                      </span>
+                    )}
                   </label>
 
                   <label className="full-field">
@@ -159,22 +247,42 @@ export default function Contact() {
                       required
                       placeholder="Décrivez les métiers concernés, les tâches réalisées et vos contraintes éventuelles…"
                     />
+                    {fieldErrors.message && (
+                      <span className="field-error">{fieldErrors.message}</span>
+                    )}
                   </label>
                 </div>
 
                 <label className="privacy">
-                  <input type="checkbox" required />
+                  <input type="checkbox" name="privacy" required />
                   <span>
                     J’accepte que mes informations soient utilisées pour
                     répondre à cette demande. *
                   </span>
                 </label>
 
+                {fieldErrors.privacy && (
+                  <p className="form-feedback error">{fieldErrors.privacy}</p>
+                )}
+
+                {formMessage && formStatus !== 'success' && (
+                  <p
+                    className={`form-feedback ${
+                      formStatus === 'error' ? 'error' : ''
+                    }`}
+                  >
+                    {formMessage}
+                  </p>
+                )}
+
                 <button
                   className="button button-primary submit-button"
                   type="submit"
+                  disabled={formStatus === 'loading'}
                 >
-                  Envoyer la demande
+                  {formStatus === 'loading'
+                    ? 'Envoi en cours…'
+                    : 'Envoyer la demande'}
                   <Icon name="arrow" size={19} />
                 </button>
               </form>

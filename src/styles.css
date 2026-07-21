@@ -1403,6 +1403,14 @@ form {
   padding: 35px;
 }
 
+.honeypot-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1464,6 +1472,34 @@ input:focus, select:focus, textarea:focus {
 
 .submit-button {
   width: 100%;
+}
+
+.submit-button:disabled {
+  opacity: .7;
+  cursor: wait;
+}
+
+.field-error {
+  color: #b42318;
+  font-size: .68rem;
+  font-weight: 700;
+}
+
+.form-feedback {
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  color: #314455;
+  background: #eef6ff;
+  border: 1px solid #cfe3fb;
+  border-radius: 10px;
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.form-feedback.error {
+  color: #8a1f17;
+  background: #fff1ef;
+  border-color: #ffd0ca;
 }
 
 .success-message {

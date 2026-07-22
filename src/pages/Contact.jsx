@@ -120,7 +120,7 @@ export default function Contact() {
               </span>
               <span>
                 <small>Calendly</small>
-                <strong>Réserver un créneau d’échange</strong>
+                <strong>Réserver un créneau d'appel</strong>
               </span>
               <Icon name="arrow" />
             </a>

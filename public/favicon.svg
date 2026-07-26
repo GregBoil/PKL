@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="14" fill="#f7f7f7"/>
+  <text
+    x="64"
+    y="84"
+    fill="#3a7bd5"
+    font-family="Arial Black, Arial, Helvetica, sans-serif"
+    font-size="53"
+    font-weight="900"
+    letter-spacing="-3"
+    text-anchor="middle"
+  >PKL</text>
+</svg>

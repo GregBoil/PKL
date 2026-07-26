@@ -51,6 +51,10 @@ export default function Home() {
             </div>
 
             <div className="hero-trust">
+              <span className="hero-location">
+                <Icon name="pin" size={18} />
+                Marseille · mobilité régionale
+              </span>
               <span>
                 <Icon name="check" size={18} />
                 Approche pédagogique

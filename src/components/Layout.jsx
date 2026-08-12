@@ -21,8 +21,7 @@ export function Header() {
           <NavLink to="/">Accueil</NavLink>
           <NavLink to="/formations">Formations</NavLink>
           <NavLink to="/financements">Financements</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
-          <Link className="button button-small button-primary nav-cta" to="/contact">Demander un devis</Link>
+          <NavLink className="button button-small button-primary nav-cta" to="/contact">Contact &amp; devis</NavLink>
         </nav>
       </div>
     </header>

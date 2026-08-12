@@ -78,10 +78,36 @@ export default function Contact() {
   return (
     <>
       <PageHero
-        eyebrow="Parlons de votre projet"
         title="Demande de devis et prise de contact"
         text="Présentez votre besoin, le public à former et votre contexte. Pierre Klein reviendra vers vous pour préciser le parcours le plus adapté."
       />
+
+      <section className="contact-onsite-section">
+        <div className="container contact-onsite-card">
+          <div className="contact-onsite-heading">
+            <span className="contact-onsite-icon">
+              <Icon name="pin" size={24} />
+            </span>
+            <div>
+              <span className="eyebrow">Formation intra-entreprise</span>
+              <h2>Les formations sont réalisées exclusivement dans vos locaux</h2>
+            </div>
+          </div>
+
+          <div className="contact-onsite-copy">
+            <p>
+              Ce choix permet d’adapter les formations à votre planning et à
+              votre environnement de travail.
+            </p>
+            <p>
+              Cela permet d’échanger sur vos installations, vos pratiques ainsi
+              que sur les équipements et moyens de prévention dont vous disposez
+              et, le cas échéant, d’identifier avec vous des pistes
+              d’amélioration pour la sécurité de vos intervenants.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section className="section contact-section">
         <div className="container contact-grid">

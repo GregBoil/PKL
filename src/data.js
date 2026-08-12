@@ -87,5 +87,5 @@ export const trainings = [
 export const contactDetails = [
   /*{ label: 'Téléphone', value: '06 72 60 90 05', icon: 'phone' },*/
   { label: 'Email', value: 'contact@pklformation.fr', icon: 'mail' },
-  { label: 'Zone d’intervention', value: 'Marseille & alentours', icon: 'pin' },
+  { label: 'Zone d’intervention', value: 'Marseille & Région Sud-Est', icon: 'pin' },
 ]

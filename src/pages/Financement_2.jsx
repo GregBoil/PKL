@@ -86,7 +86,7 @@ export default function Financement2() {
         className="funding-hero funding-hero-large"
         style={{ '--funding-hero-image': `url("${heroImage}")` }}
         eyebrow="Financement de la formation"
-        title="Donnez vie à votre projet de formation"
+        title="Financer votre projet de formation"
         text="Votre OPCO peut prendre en charge tout ou partie du coût de la formation, selon votre situation et les critères applicables."
       >
         <a
@@ -186,23 +186,6 @@ export default function Financement2() {
               </a>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="section funding-cta-section">
-        <div className="container cta-card compact">
-          <div>
-            <h2>Besoin d’aide pour votre demande ?</h2>
-            <p>
-              Présentez-nous votre projet : nous vous aidons à réunir les
-              éléments nécessaires pour solliciter une prise en charge.
-            </p>
-          </div>
-
-          <Link className="button button-yellow" to="/contact">
-            Nous contacter
-            <Icon name="arrow" size={19} />
-          </Link>
         </div>
       </section>
     </>

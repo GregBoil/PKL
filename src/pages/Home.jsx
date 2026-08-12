@@ -37,27 +37,8 @@ export default function Home() {
                 <Icon name="arrow" size={19} />
               </Link>
               <Link className="button button-secondary" to="/contact">
-                Demander un devis
+                Nous contacter
               </Link>
-            </div>
-
-            <div className="hero-trust">
-              <span className="hero-location">
-                <Icon name="pin" size={18} />
-                Marseille · mobilité régionale
-              </span>
-              <span>
-                <Icon name="check" size={18} />
-                Approche pédagogique
-              </span>
-              <span>
-                <Icon name="check" size={18} />
-                Contenu contextualisé
-              </span>
-              <span>
-                <Icon name="check" size={18} />
-                Évaluation adaptée
-              </span>
             </div>
           </div>
 

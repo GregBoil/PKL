@@ -27,8 +27,8 @@ export default function Home() {
 
 
             <h1>
-              Formations en habilitation électrique pour{' '}
-              <span>entreprises et professionnels</span>
+              Formations en habilitation électrique {' '}
+              <span>à Marseille et région Sud-Est</span>
             </h1>
 
             <p>

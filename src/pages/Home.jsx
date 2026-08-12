@@ -89,21 +89,9 @@ export default function Home() {
 
             <div className="definition-copy">
               <p>
-                L’habilitation électrique reconnaît la capacité d’un salarié à
-                réaliser ses missions en sécurité face au risque électrique. Elle
-                est délivrée par l’employeur, en fonction du poste, des tâches
-                confiées et de l’environnement de travail.
-              </p>
-              <p>
-                La formation s’adresse aux personnes amenées à intervenir sur ou
-                à proximité d’installations électriques : techniciens, agents de
-                maintenance, personnels d’exploitation, encadrants ou
-                intervenants non électriciens exposés dans leur activité.
-              </p>
-              <p>
-                Former vos équipes permet de clarifier les gestes autorisés, de
-                réduire les situations à risque et de répondre aux obligations du
-                <strong> Code du travail</strong> et de la norme{' '}
+                L’habilitation électrique atteste qu’un salarié est apte à réaliser ses missions en sécurité vis-à-vis du risque électrique. 
+                Elle concerne le personnel électricien et non électricien intervenant sur ou à proximité d’installations électriques.
+                Elle répond aux exigences règlementaires du <strong> Code du travail</strong> et de la norme{' '}
                 <strong>NF C 18-510</strong>.
               </p>
             </div>
@@ -111,13 +99,7 @@ export default function Home() {
             <div className="info-alert">
               <Icon name="document" />
               <p>
-                La formation prépare et évalue les acquis.{' '}
-                <strong>
-                  L’employeur reste responsable de la délivrance du titre
-                  d’habilitation adapté
-                </strong>
-                , après évaluation et en tenant compte de l’aptitude et des
-                tâches confiées.
+                Elle est délivrée par l’employeur à l’issue d’une formation spécialisée, sur la base de l’avis émis par le formateur.
               </p>
             </div>
           </div>

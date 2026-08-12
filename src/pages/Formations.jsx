@@ -140,6 +140,7 @@ export default function Formations() {
         </div>
       </section>
 
+      {/*
       <section className="section choice-section">
         <div className="container">
           <div className="section-heading center">
@@ -162,7 +163,8 @@ export default function Formations() {
           </div>
         </div>
       </section>
-
+      */}
+      
       <section className="section">
         <div className="container cta-card compact">
           <div>

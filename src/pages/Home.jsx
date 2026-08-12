@@ -195,16 +195,15 @@ export default function Home() {
       <section className="section cta-section">
         <div className="container cta-card">
           <div>
-            <span className="eyebrow eyebrow-light">Un besoin spécifique ?</span>
-            <h2>Des formations adaptées à vos interventions.</h2>
+            <span className="eyebrow eyebrow-light">Vous ne savez pas quel titre d'habilitation choisir?</span>
+            <h2>Discutons de vos besoins en formation!</h2>
             <p>
-              Préparez vos équipes aux risques électriques avec des formations conformes
-               à la réglementation et adaptées à vos conditions de travail.
+              Prenez rendez-vous pour que l'on puisse analyser ensemble vos besoins et vous proposer la formation la mieux adaptée.
             </p>
           </div>
 
           <Link className="button button-yellow" to="/contact">
-            Demander un devis
+            Me contacter
             <Icon name="arrow" size={19} />
           </Link>
         </div>

@@ -90,7 +90,11 @@ export default function Home() {
             <div className="definition-copy">
               <p>
                 L’habilitation électrique atteste qu’un salarié est apte à réaliser ses missions en sécurité vis-à-vis du risque électrique. 
+              </p>
+              <p>
                 Elle concerne le personnel électricien et non électricien intervenant sur ou à proximité d’installations électriques.
+              </p>
+              <p>
                 Elle répond aux exigences règlementaires du <strong> Code du travail</strong> et de la norme{' '}
                 <strong>NF C 18-510</strong>.
               </p>

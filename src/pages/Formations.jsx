@@ -65,7 +65,7 @@ export default function Formations() {
               <div className="detail-duration">
                 <Icon name="calendar" />
                 <span>
-                  <small>Durée indicative</small>
+                  <small>Durée</small>
                   <strong>{training.duration}</strong>
                 </span>
               </div>

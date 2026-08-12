@@ -31,12 +31,6 @@ export default function Home() {
               <span>à Marseille et région Sud-Est</span>
             </h1>
 
-            <p>
-              Pierre Klein accompagne vos équipes dans la compréhension du
-              risque électrique et l’acquisition de pratiques sûres, adaptées à
-              leurs missions.
-            </p>
-
             <div className="button-row">
               <Link className="button button-primary" to="/formations">
                 Découvrir les formations

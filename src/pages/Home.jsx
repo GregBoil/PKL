@@ -147,12 +147,6 @@ export default function Home() {
                 le travail quotidien.
               </p>
             </div>
-
-            <div className="professional-highlights">
-              <span>BTS électrotechnique</span>
-              <span>Expérience maintenance</span>
-              <span>Approche terrain</span>
-            </div>
           </div>
         </div>
       </section>

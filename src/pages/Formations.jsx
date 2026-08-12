@@ -30,9 +30,8 @@ export default function Formations() {
   return (
     <>
       <PageHero
-        eyebrow="Nos parcours"
-        title="Des formations pensées pour les situations de travail"
-        text="Chaque parcours est précisé avec l’entreprise afin de correspondre aux tâches réalisées, au niveau des participants et à leur environnement électrique."
+        eyebrow="Habilitations électriques"
+        title="Formation préparatoire à l’habilitation électrique conformément à la norme NF C 18-510."
       />
 
       <section className="section formations-section">

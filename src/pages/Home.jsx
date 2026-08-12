@@ -84,7 +84,6 @@ export default function Home() {
         <div className="container split-grid">
           <div>
             <SectionHeading
-              eyebrow="Comprendre"
               title="Qu’est-ce qu’une habilitation électrique ?"
             />
 
@@ -143,7 +142,6 @@ export default function Home() {
 
           <div className="professional-content">
             <SectionHeading
-              eyebrow="Le professionnel"
               title="Un formateur issu du terrain"
             />
 

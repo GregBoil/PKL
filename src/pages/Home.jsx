@@ -133,18 +133,16 @@ export default function Home() {
 
             <div className="professional-copy">
               <p>
-                Pierre Klein est formateur indépendant en habilitations
-                électriques BT/HT. Avant de transmettre, il a exercé pendant
-                près de vingt ans dans des environnements techniques :
-                maintenance industrielle, équipements électriques, suivi
-                d’interventions et contraintes de chantier.
+                Pierre Klein est formateur indépendant en habilitations électriques BT/HT. Titulaire d’un BTS en électrotechnique et d’une certification de formateur, il associe expertise technique et compétences pédagogiques.
+              </p>
+              <p> 
+                Avant de devenir formateur, il a exercé pendant près de vingt ans, d’abord comme exécutant, puis comme responsable de maintenance dans des secteurs variés : industrie, tertiaire, engins de chantier, ferroviaire, agroalimentaire, blanchisserie et électronique. 
               </p>
               <p>
-                Ce parcours lui permet d’aborder la sécurité électrique avec des
-                exemples concrets, proches des situations rencontrées par les
-                équipes. L’objectif n’est pas seulement de connaître les règles,
-                mais de comprendre comment les appliquer avec discernement dans
-                le travail quotidien.
+                Ce parcours lui permet d’aborder la sécurité électrique à partir d’exemples concrets, proches des situations rencontrées par les professionnels, quel que soit leur niveau de responsabilité.
+              </p>
+              <p>
+                Son objectif n’est pas seulement de transmettre des règles, mais d’aider chacun à comprendre comment les appliquer au quotidien. C’est cette expérience du terrain qui fait toute la différence dans sa pédagogie.
               </p>
             </div>
           </div>

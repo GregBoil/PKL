@@ -37,7 +37,7 @@ export default function Home() {
                 <Icon name="arrow" size={19} />
               </Link>
               <Link className="button button-secondary" to="/contact">
-                Nous contacter
+                Me contacter
               </Link>
             </div>
           </div>

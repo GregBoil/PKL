@@ -96,8 +96,11 @@ if ($email !== '' && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     $errors['email'] = 'L’adresse e-mail est invalide.';
 }
 
-if ($participants !== '' && !preg_match('/^[0-9]{1,4}$/', $participants)) {
-    $errors['participants'] = 'Le nombre de personnes est invalide.';
+if (
+    $participants !== '' &&
+    (!preg_match('/^[0-9]{1,2}$/', $participants) || (int) $participants < 1 || (int) $participants > 12)
+) {
+    $errors['participants'] = 'Le nombre de personnes doit être compris entre 1 et 12.';
 }
 
 if ($errors !== []) {

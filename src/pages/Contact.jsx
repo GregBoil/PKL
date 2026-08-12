@@ -35,6 +35,15 @@ export default function Contact() {
       errors.message = 'Le message est obligatoire.'
     }
 
+    if (
+      payload.participants &&
+      (!/^\d+$/.test(payload.participants) ||
+        Number(payload.participants) < 1 ||
+        Number(payload.participants) > 12)
+    ) {
+      errors.participants = 'Le nombre de personnes doit être compris entre 1 et 12.'
+    }
+
     if (!payload.privacy) {
       errors.privacy = 'Votre accord est nécessaire pour envoyer la demande.'
     }
@@ -161,7 +170,6 @@ export default function Contact() {
 
           <div className="form-card">
             <div className="form-heading">
-              <span>Votre projet</span>
               <h2>Demander un devis</h2>
               <p>Les champs marqués d’un * sont nécessaires.</p>
             </div>
@@ -241,6 +249,7 @@ export default function Contact() {
                       {trainings.map((training) => (
                         <option key={training.id}>{training.title}</option>
                       ))}
+                      <option value="Autre">Autre</option>
                     </select>
                   </label>
 
@@ -250,6 +259,7 @@ export default function Contact() {
                       type="number"
                       name="participants"
                       min="1"
+                      max="12"
                       placeholder="Ex. 8"
                     />
                     {fieldErrors.participants && (
@@ -270,7 +280,7 @@ export default function Contact() {
                       name="message"
                       rows="5"
                       required
-                      placeholder="Décrivez les métiers concernés, les tâches réalisées et vos contraintes éventuelles…"
+                      placeholder="Merci de décrire vos besoins, les métiers et les tâches des apprenants qui suivront la formation ainsi que vos contraintes éventuelles."
                     />
                     {fieldErrors.message && (
                       <span className="field-error">{fieldErrors.message}</span>

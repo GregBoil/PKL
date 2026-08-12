@@ -24,10 +24,7 @@ export default function Home() {
         <div className="hero-glow" />
         <div className="container hero-grid">
           <div className="hero-content">
-            <span className="eyebrow">
-              <span className="status-dot" />
-              Prévention du risque électrique
-            </span>
+
 
             <h1>
               Formations en habilitation électrique pour{' '}

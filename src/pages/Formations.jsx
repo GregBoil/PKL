@@ -31,7 +31,7 @@ export default function Formations() {
     <>
       <PageHero
         eyebrow="Nos Formations"
-        title="Formation à l’habilitation électrique"
+        title="Formations à l’habilitation électrique"
         text="Conformément à la Norme NF C 18-510."
       />
 

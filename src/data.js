@@ -16,10 +16,44 @@ export const benefits = [
 ]
 
 export const trainings = [
+    {
+    id: 'formation-h0-b0',
+    eyebrow: 'Habilitations électriques',
+    title: 'H0 / B0',
+    summary: 'Formation préparatoire à l’habilitation électrique pour les travaux d’ordre non électrique en environnement BT et/ou HT.',
+    audience: 'Personnel non électricien amené à accéder à des locaux réservés aux électriciens et à effectuer des travaux d’ordre non électrique dans un environnement comportant des installations ou ouvrages en Basse et/ou Haute Tension.',
+    objectives: [
+      'Identifier la présence d’un risque électrique et mettre en œuvre les mesures de prévention adaptées.',
+      'Identifier les domaines de tension, les zones d’environnement, les protections collectives et la signalisation.',
+      'Se positionner dans son rôle d’exécutant non-électricien habilité H0V/B0, appliquer les instructions reçues et signaler toute situation imprévue.',
+    ],
+    prerequisites: 'Aucune connaissance préalable en électricité n’est requise.',
+    duration: 'Initiale : 7 h (1 jour) — Recyclage : 7 h (1 jour)',
+    methods: 'Diaporamas et quiz, études de cas, mises en situation pratiques, jeux de rôle et partage d’expériences.',
+    evaluation: 'QCM de validation des acquis et évaluation pratique.',
+    programFile: 'Programme_H0_B0.docx',
+  },
+    {
+    id: 'formation-bs-be-manoeuvre',
+    eyebrow: 'Habilitations électriques',
+    title: 'BS / BE Manœuvre',
+    summary: 'Formation préparatoire à l’habilitation électrique pour les interventions élémentaires et les manœuvres en BT/TBT.',
+    audience: 'Personnel non électricien chargé de réaliser des interventions élémentaires en Basse Tension et/ou des manœuvres d’exploitation, de consignation ou d’urgence sur des installations BT ou TBT.',
+    objectives: [
+      'Analyser une situation de travail, identifier les risques électriques et appliquer les mesures de prévention adaptées.',
+      'Reconnaître les zones à risque, les symboles de sécurité et les équipements électriques.',
+      'Réaliser des interventions élémentaires en Basse Tension et les manœuvres autorisées dans le respect des prescriptions réglementaires.',
+    ],
+    prerequisites: 'Connaissances élémentaires en électricité et connaissance des matériels et des opérations confiées.',
+    duration: 'Initiale : 14 h (2 jours) — Recyclage : 10 h 30 (1,5 jour)',
+    methods: 'Diaporamas et quiz, études de cas, mises en situation pratiques, jeux de rôle et partage d’expériences.',
+    evaluation: 'QCM de validation des acquis et évaluation pratique.',
+    programFile: 'Programme_BS_BE_Manoeuvre.docx',
+  },
   {
     id: 'formation-b2v-br-bc-h0-b0',
     eyebrow: 'Habilitations électriques',
-    title: 'B2V, BR, BC, H0 et B0',
+    title: 'B2V, BR, BC, H0 / B0',
     summary: 'Formation préparatoire à l’habilitation électrique conformément à la norme NF C 18-510.',
     audience: 'Personnel électricien réalisant des travaux, des interventions et des consignations en Basse Tension, amené à accéder à des locaux réservés aux électriciens comportant des équipements Haute Tension.',
     objectives: [
@@ -36,7 +70,7 @@ export const trainings = [
   {
     id: 'formation-b2v-br-bc-h2v-hc-b0-h0',
     eyebrow: 'Habilitations électriques BT et HTA',
-    title: 'B2V, BR, BC, H2V, HC, B0 et H0',
+    title: 'B2V, BR, BC, H2V, HC, B0 / H0',
     summary: 'Formation préparatoire aux habilitations électriques Basse Tension et Haute Tension conformément à la norme NF C 18-510.',
     audience: 'Personnel électricien réalisant des travaux, des interventions et des consignations en Basse Tension, ainsi que des travaux hors tension et des consignations sur des ouvrages ou installations en Haute Tension.',
     objectives: [
@@ -50,40 +84,8 @@ export const trainings = [
     evaluation: 'QCM de validation des acquis et évaluation pratique.',
     programFile: 'Programme_B2V_BR_BC_H2V_HC_B0_H0.docx',
   },
-  {
-    id: 'formation-bs-be-manoeuvre',
-    eyebrow: 'Habilitations électriques',
-    title: 'BS et BE Manœuvre',
-    summary: 'Formation préparatoire à l’habilitation électrique pour les interventions élémentaires et les manœuvres en BT/TBT.',
-    audience: 'Personnel non électricien chargé de réaliser des interventions élémentaires en Basse Tension et/ou des manœuvres d’exploitation, de consignation ou d’urgence sur des installations BT ou TBT.',
-    objectives: [
-      'Analyser une situation de travail, identifier les risques électriques et appliquer les mesures de prévention adaptées.',
-      'Reconnaître les zones à risque, les symboles de sécurité et les équipements électriques.',
-      'Réaliser des interventions élémentaires en Basse Tension et les manœuvres autorisées dans le respect des prescriptions réglementaires.',
-    ],
-    prerequisites: 'Connaissances élémentaires en électricité et connaissance des matériels et des opérations confiées.',
-    duration: 'Initiale : 14 h (2 jours) — Recyclage : 10 h 30 (1,5 jour)',
-    methods: 'Diaporamas et quiz, études de cas, mises en situation pratiques, jeux de rôle et partage d’expériences.',
-    evaluation: 'QCM de validation des acquis et évaluation pratique.',
-    programFile: 'Programme_BS_BE_Manoeuvre.docx',
-  },
-  {
-    id: 'formation-h0-b0',
-    eyebrow: 'Habilitations électriques',
-    title: 'H0 et B0',
-    summary: 'Formation préparatoire à l’habilitation électrique pour les travaux d’ordre non électrique en environnement BT et/ou HT.',
-    audience: 'Personnel non électricien amené à accéder à des locaux réservés aux électriciens et à effectuer des travaux d’ordre non électrique dans un environnement comportant des installations ou ouvrages en Basse et/ou Haute Tension.',
-    objectives: [
-      'Identifier la présence d’un risque électrique et mettre en œuvre les mesures de prévention adaptées.',
-      'Identifier les domaines de tension, les zones d’environnement, les protections collectives et la signalisation.',
-      'Se positionner dans son rôle d’exécutant non-électricien habilité H0V/B0, appliquer les instructions reçues et signaler toute situation imprévue.',
-    ],
-    prerequisites: 'Aucune connaissance préalable en électricité n’est requise.',
-    duration: 'Initiale : 7 h (1 jour) — Recyclage : 7 h (1 jour)',
-    methods: 'Diaporamas et quiz, études de cas, mises en situation pratiques, jeux de rôle et partage d’expériences.',
-    evaluation: 'QCM de validation des acquis et évaluation pratique.',
-    programFile: 'Programme_H0_B0.docx',
-  },
+
+
 ]
 
 export const contactDetails = [

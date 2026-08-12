@@ -260,7 +260,6 @@ export default function Contact() {
                       name="participants"
                       min="1"
                       max="12"
-                      placeholder="Ex. 8"
                     />
                     {fieldErrors.participants && (
                       <span className="field-error">

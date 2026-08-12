@@ -713,7 +713,7 @@ p {
 .professional-photo {
   overflow: hidden;
   background: #e8eef5;
-  border-radius: var(--radius-small);
+  border-radius: 32px;
   box-shadow: var(--shadow);
 }
 

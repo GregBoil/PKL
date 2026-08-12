@@ -883,6 +883,7 @@ p {
 
 .eyebrow-light {
   color: var(--yellow);
+  font-size: 14px;
 }
 
 .cta-card.compact {

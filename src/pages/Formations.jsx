@@ -25,13 +25,14 @@ const choiceSteps = [
 export default function Formations() {
   const [active, setActive] = useState(0)
   const training = trainings[active]
-  const programUrl = `${import.meta.env.BASE_URL}Formation_1.pdf`
+  const programUrl = `${import.meta.env.BASE_URL}${training.programFile}`
 
   return (
     <>
       <PageHero
-        eyebrow="Habilitations électriques"
-        title="Formation préparatoire à l’habilitation électrique conformément à la norme NF C 18-510."
+        eyebrow="Nos Formations"
+        title="Formation à l’habilitation électrique"
+        text="Conformément à la Norme NF C 18-510."
       />
 
       <section className="section formations-section">
@@ -75,7 +76,7 @@ export default function Formations() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Voir le programme PDF
+                Télécharger le programme
                 <Icon name="document" size={18} />
               </a>
             </div>

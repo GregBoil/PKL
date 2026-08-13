@@ -1515,6 +1515,46 @@ p {
   letter-spacing: -.02em;
 }
 
+.opco-logo-frame {
+  padding: 8px;
+  background: var(--white) !important;
+  border: 1px solid var(--border);
+}
+
+.opco-logo-frame img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.opco-directory-card:nth-child(7) .opco-logo-frame {
+  background: var(--blue-dark) !important;
+  border-color: var(--blue-dark);
+}
+
+.opco-directory-card:nth-child(8) .opco-logo-frame {
+  padding: 13px;
+}
+
+.opco-directory-card:nth-child(8) .opco-logo-frame img {
+  max-width: 42px;
+  max-height: 42px;
+  margin: auto;
+}
+
+.opco-logo-fallback {
+  width: 100%;
+  height: 100%;
+  display: none;
+  place-items: center;
+  color: var(--white);
+  background: linear-gradient(145deg, var(--blue-dark), var(--blue));
+  border-radius: 10px 10px 20px 10px;
+  font-size: .7rem;
+  font-weight: 900;
+}
+
 .opco-directory-card:nth-child(3n + 2) .opco-monogram {
   color: var(--blue-dark);
   background: var(--yellow);

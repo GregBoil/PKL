@@ -26,10 +26,13 @@ export default function Formations() {
   const [active, setActive] = useState(0)
   const training = trainings[active]
   const programUrl = `${import.meta.env.BASE_URL}${training.programFile}`
+  const heroImage = `${import.meta.env.BASE_URL}formations-hero.png`
 
   return (
     <>
       <PageHero
+        className="formations-hero"
+        style={{ '--formations-hero-image': `url("${heroImage}")` }}
         eyebrow="Le catalogue"
         title={
                 <>
@@ -64,7 +67,6 @@ export default function Formations() {
 
           <article className="training-detail" id={training.id}>
             <div className="detail-intro">
-              <span className="eyebrow">{training.eyebrow}</span>
               <h2>{training.title}</h2>
               <p>{training.summary}</p>
 
@@ -88,57 +90,61 @@ export default function Formations() {
             </div>
 
             <div className="detail-grid">
-              <div className="detail-item">
-                <span className="card-icon">
-                  <Icon name="target" />
-                </span>
-                <div>
-                  <h3>Public concerné</h3>
-                  <p>{training.audience}</p>
+              <div className="detail-column">
+                <div className="detail-item">
+                  <span className="card-icon">
+                    <Icon name="target" />
+                  </span>
+                  <div>
+                    <h3>Public concerné</h3>
+                    <p>{training.audience}</p>
+                  </div>
+                </div>
+
+                <div className="detail-item">
+                  <span className="card-icon">
+                    <Icon name="document" />
+                  </span>
+                  <div>
+                    <h3>Pré-requis</h3>
+                    <p>{training.prerequisites}</p>
+                  </div>
+                </div>
+
+                <div className="detail-item">
+                  <span className="card-icon">
+                    <Icon name="check" />
+                  </span>
+                  <div>
+                    <h3>Évaluation</h3>
+                    <p>{training.evaluation}</p>
+                  </div>
                 </div>
               </div>
 
-              <div className="detail-item">
-                <span className="card-icon">
-                  <Icon name="trend" />
-                </span>
-                <div>
-                  <h3>Objectifs pédagogiques</h3>
-                  <ul>
-                    {training.objectives.map((objective) => (
-                      <li key={objective}>{objective}</li>
-                    ))}
-                  </ul>
+              <div className="detail-column">
+                <div className="detail-item">
+                  <span className="card-icon">
+                    <Icon name="trend" />
+                  </span>
+                  <div>
+                    <h3>Objectifs pédagogiques</h3>
+                    <ul>
+                      {training.objectives.map((objective) => (
+                        <li key={objective}>{objective}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-              </div>
 
-              <div className="detail-item">
-                <span className="card-icon">
-                  <Icon name="document" />
-                </span>
-                <div>
-                  <h3>Pré-requis</h3>
-                  <p>{training.prerequisites}</p>
-                </div>
-              </div>
-
-              <div className="detail-item">
-                <span className="card-icon">
-                  <Icon name="shield" />
-                </span>
-                <div>
-                  <h3>Méthodes pédagogiques</h3>
-                  <p>{training.methods}</p>
-                </div>
-              </div>
-
-              <div className="detail-item full">
-                <span className="card-icon">
-                  <Icon name="check" />
-                </span>
-                <div>
-                  <h3>Évaluation</h3>
-                  <p>{training.evaluation}</p>
+                <div className="detail-item">
+                  <span className="card-icon">
+                    <Icon name="shield" />
+                  </span>
+                  <div>
+                    <h3>Méthodes pédagogiques</h3>
+                    <p>{training.methods}</p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -536,6 +536,9 @@ p {
   color: var(--white);
 }
 
+.definition-section .icon {
+  color: var(--yellow)
+}
 
 .split-grid {
   display: grid;

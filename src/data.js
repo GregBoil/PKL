@@ -30,7 +30,7 @@ export const trainings = [
     duration: 'Initiale : 7 h (1 jour)\nRecyclage : 7 h (1 jour)',
     methods: 'Diaporamas et quiz, études de cas, mises en situation pratiques, jeux de rôle et partage d’expériences.',
     evaluation: 'QCM de validation des acquis et évaluation pratique.',
-    programFile: 'Programme_H0_B0.docx',
+    programFile: 'Programme_H0_B0.pdf',
   },
     {
     id: 'formation-bs-be-manoeuvre',
@@ -46,7 +46,7 @@ export const trainings = [
     duration: 'Initiale : 14 h (2 jours)\nRecyclage : 10 h 30 (1,5 jour)',
     methods: 'Diaporamas et quiz, études de cas, mises en situation pratiques, jeux de rôle et partage d’expériences.',
     evaluation: 'QCM de validation des acquis et évaluation pratique.',
-    programFile: 'Programme_BS_BE_Manoeuvre.docx',
+    programFile: 'Programme_BS_BE_Manoeuvre.pdf',
   },
   {
     id: 'formation-b2v-br-bc-h0-b0',
@@ -78,7 +78,7 @@ export const trainings = [
     duration: 'Initiale : 28 h (4 jours)\nRecyclage : 14 h (2 jours)',
     methods: 'Diaporamas, études de cas, mises en situation pratiques et partage d’expériences, sur plateau technique électrique et cellules HTA du client.',
     evaluation: 'QCM de validation des acquis et évaluation pratique.',
-    programFile: 'Programme_B2V_BR_BC_H2V_HC_B0_H0.docx',
+    programFile: 'Programme_B2V_BR_BC_H2V_HC_B0_H0.pdf',
   },
 
 

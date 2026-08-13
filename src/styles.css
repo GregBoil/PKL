@@ -2169,7 +2169,6 @@ input:focus, select:focus, textarea:focus {
   .professional-photo {
     width: min(100%, 420px);
     margin: 0 auto;
-    border-radius: 10% 10% 30% 30% / 10% 10% 30% 30%;
   }
 
   .professional-photo img {

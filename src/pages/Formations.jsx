@@ -177,7 +177,7 @@ export default function Formations() {
       </section>
       */}
 
-      <section className="section">
+      <section className="section formations-cta-section">
         <div className="container cta-card compact">
           <div>
             <h2>Vous ne savez pas quelle formation choisir ?</h2>

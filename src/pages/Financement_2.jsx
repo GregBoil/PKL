@@ -35,13 +35,13 @@ const opcos = [
   },
   {
     name: 'Constructys',
-    initials: 'C',
+    initials: 'Const',
     href: 'https://www.constructys.fr/',
     sectors: 'Construction, bâtiment et travaux publics',
   },
   {
     name: "L’Opcommerce",
-    initials: 'OC',
+    initials: 'CO',
     href: 'https://www.lopcommerce.com/',
     sectors: 'Commerce et branches professionnelles associées',
   },
@@ -53,7 +53,7 @@ const opcos = [
   },
   {
     name: 'Opco Mobilités',
-    initials: 'OM',
+    initials: 'Mobi',
     href: 'https://www.opcomobilites.fr/',
     sectors: 'Transport, automobile et services de mobilité',
   },
@@ -119,6 +119,11 @@ export default function Financement2() {
               Tous les éléments nécessaires à votre demande de prise en charge
               seront fournis : programme, devis et documents administratifs.
             </p>
+          </div>
+
+          <aside className="funding-support-card">
+            <span className="eyebrow">À quel OPCO vous adresser ?</span>
+            <p>Suiver le lien ci-dessous et renseigner le SIRET de votre entreprise :</p>
             <a
               className="funding-general-link"
               href="https://www.opco.fr/"
@@ -128,26 +133,6 @@ export default function Financement2() {
               Consulter le portail général des OPCO
               <Icon name="arrow" size={18} />
             </a>
-          </div>
-
-          <aside className="funding-support-card">
-            <span className="funding-support-icon">
-              <Icon name="document" size={27} />
-            </span>
-            <span className="eyebrow">Dossier simplifié</span>
-            <h3>Nous préparons les pièces utiles</h3>
-            <div className="funding-support-list">
-              {providedDocuments.map((document) => (
-                <span key={document}>
-                  <Icon name="check" size={18} />
-                  {document}
-                </span>
-              ))}
-            </div>
-            <Link className="button button-primary" to="/contact">
-              Préparer ma demande
-              <Icon name="arrow" size={18} />
-            </Link>
           </aside>
         </div>
       </section>

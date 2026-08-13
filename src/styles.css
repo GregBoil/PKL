@@ -1032,7 +1032,9 @@ p {
   background: #fff9e6;
   border: 1px solid rgba(242,183,5,.34);
   border-radius: 13px;
+  white-space: pre-line;
 }
+
 
 .detail-duration .icon {
   color: var(--yellow);

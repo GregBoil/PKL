@@ -30,9 +30,15 @@ export default function Formations() {
   return (
     <>
       <PageHero
-        eyebrow="Nos Formations"
-        title="Formations à l’habilitation électrique"
-        text="Conformément à la Norme NF C 18-510."
+        eyebrow="Le catalogue"
+        title={
+                <>
+                  Habilitations électriques
+                  <br />
+                  BT et HT
+                </>
+              }
+        text="Formations à l’habilitation électrique conformes à la Norme NF C 18-510."
       />
 
       <section className="section formations-section">
@@ -164,7 +170,7 @@ export default function Formations() {
         </div>
       </section>
       */}
-      
+
       <section className="section">
         <div className="container cta-card compact">
           <div>

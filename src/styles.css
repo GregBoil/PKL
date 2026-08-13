@@ -170,6 +170,12 @@ p {
   right: 0;
 }
 
+.main-nav > a.nav-cta.active {
+  color: var(--white);
+  background: var(--blue-dark);
+  box-shadow: 0 12px 26px rgba(29,85,157,.28);
+}
+
 .menu-button {
   display: none;
   border: 0;
@@ -961,6 +967,26 @@ p {
   color: var(--white);
 }
 
+.contact-hero {
+  position: relative;
+  overflow: hidden;
+  color: var(--white);
+  background:
+    linear-gradient(90deg, rgba(18,38,55,.9), rgba(23,42,56,.66)),
+    var(--contact-hero-image) center 52% / cover;
+  border-bottom: 0;
+}
+
+.contact-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-hero h1,
+.contact-hero p {
+  color: var(--white);
+}
+
 .funding-hero-large {
   min-height: 540px;
   padding: 125px 0 115px;
@@ -1423,17 +1449,6 @@ p {
   border: 1px solid var(--border);
   border-radius: 6px 62px 6px 62px;
   box-shadow: var(--shadow);
-}
-
-.funding-support-card::after {
-  content: '';
-  position: absolute;
-  right: -45px;
-  top: -45px;
-  width: 130px;
-  height: 130px;
-  background: rgba(58,123,213,.08);
-  border-radius: 50%;
 }
 
 .funding-support-icon {
@@ -1916,9 +1931,16 @@ input:focus, select:focus, textarea:focus {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr .6fr .9fr;
+  grid-template-columns: 1fr auto;
   gap: 70px;
   padding-bottom: 55px;
+}
+
+.footer-grid .footer-links {
+  min-width: 150px;
+  align-items: flex-end;
+  justify-self: end;
+  text-align: right;
 }
 
 .brand-light strong {
@@ -2231,6 +2253,12 @@ input:focus, select:focus, textarea:focus {
 
   .footer-grid {
     gap: 35px;
+  }
+
+  .footer-grid .footer-links {
+    align-items: flex-start;
+    justify-self: start;
+    text-align: left;
   }
 
 }

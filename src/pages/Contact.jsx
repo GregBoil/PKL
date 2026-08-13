@@ -7,6 +7,7 @@ export default function Contact() {
   const [formStatus, setFormStatus] = useState('idle')
   const [formMessage, setFormMessage] = useState('')
   const [fieldErrors, setFieldErrors] = useState({})
+  const heroImage = `${import.meta.env.BASE_URL}contact-hero.png`
 
   const handleSubmit = async (event) => {
     event.preventDefault()
@@ -87,6 +88,8 @@ export default function Contact() {
   return (
     <>
       <PageHero
+        className="contact-hero"
+        style={{ '--contact-hero-image': `url("${heroImage}")` }}
         title="Demande de devis et prise de contact"
         text="Présentez votre besoin, le public à former et votre contexte. Pierre Klein reviendra vers vous pour préciser le parcours le plus adapté."
       />

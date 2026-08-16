@@ -125,7 +125,7 @@ export default function Contact() {
         <div className="container contact-grid">
           <aside className="contact-aside">
             <div className="section-heading">
-              <h2>Me contacter</h2>
+              <h2>Nous contacter</h2>
               <p>
                 Pour une question, une demande de devis ou un besoin
                 d’orientation, utilisez le formulaire ou réservez un échange téléphonique.

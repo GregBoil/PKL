@@ -18,7 +18,7 @@ export const benefits = [
 export const trainings = [
     {
     id: 'formation-h0-b0',
-    title: 'H0, B0',
+    title: 'H0/B0',
     summary: 'Formation à l’habilitation électrique pour les travaux d’ordre non électrique en environnement BT et/ou HT.',
     audience: 'Personnel non électricien amené à accéder à des locaux réservés aux électriciens et à effectuer des travaux d’ordre non électrique dans un environnement comportant des installations ou ouvrages en Basse et/ou Haute Tension.',
     objectives: [
@@ -34,7 +34,7 @@ export const trainings = [
   },
     {
     id: 'formation-bs-be-manoeuvre',
-    title: 'BS, BE Manœuvre',
+    title: 'BS/BE Manœuvre',
     summary: 'Formation à l’habilitation électrique pour les interventions élémentaires et les manœuvres en BT/TBT.',
     audience: 'Personnel non électricien chargé de réaliser des interventions élémentaires en Basse Tension et/ou des manœuvres d’exploitation, de consignation ou d’urgence sur des installations BT ou TBT.',
     objectives: [
@@ -50,7 +50,7 @@ export const trainings = [
   },
   {
     id: 'formation-b2v-br-bc-h0-b0',
-    title: 'B2V, BR, BC, H0, B0',
+    title: 'B2V/BR/BC/H0/B0',
     summary: 'Formation à l’habilitation électrique conformément à la norme NF C 18-510.',
     audience: 'Personnel électricien réalisant des travaux, des interventions et des consignations en Basse Tension, amené à accéder à des locaux réservés aux électriciens comportant des équipements Haute Tension.',
     objectives: [
@@ -66,7 +66,7 @@ export const trainings = [
   },
   {
     id: 'formation-b2v-br-bc-h2v-hc-b0-h0',
-    title: 'B2V, BR, BC, H2V, HC, H0, B0',
+    title: 'B2V/BR/BC/H2V/\u200BHC/H0/B0',
     summary: 'Habilitations électriques BT / HT conformes à la norme NF C 18-510.',
     audience: 'Personnel électricien réalisant des travaux, des interventions et des consignations en Basse Tension, ainsi que des travaux hors tension et des consignations sur des ouvrages ou installations en Haute Tension.',
     objectives: [

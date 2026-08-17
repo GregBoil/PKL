@@ -2102,9 +2102,14 @@ input:focus, select:focus, textarea:focus {
   }
 
   .hero {
-    min-height: auto;
-    padding: 65px 0 75px;
+    min-height: calc(100vh - 68px);
+    min-height: calc(100svh - 68px);
+    padding: 48px 0;
     background-position: center top;
+  }
+
+  .hero h1 {
+    font-size: 3.25rem;
   }
 
   .hero-grid {

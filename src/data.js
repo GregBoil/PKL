@@ -62,7 +62,7 @@ export const trainings = [
     duration: 'Initiale : 21 h (3 jours)\nRecyclage : 10 h 30 (1,5 jour)',
     methods: 'Diaporamas et quiz, études de cas, mises en situation pratiques, jeux de rôle et partage d’expériences.',
     evaluation: 'QCM de validation des acquis et évaluation pratique.',
-    programFile: 'Programme_B2V_BR_BC_H0_B0.docx',
+    programFile: 'Programme_B2V_BR_BC_H0_B0.pdf',
   },
   {
     id: 'formation-b2v-br-bc-h2v-hc-b0-h0',

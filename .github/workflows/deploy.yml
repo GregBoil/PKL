@@ -40,3 +40,8 @@ jobs:
           port: 21
           local-dir: ./dist/
           server-dir: /www/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            matomo/**

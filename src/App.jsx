@@ -16,10 +16,23 @@ function ScrollToTop() {
   return null
 }
 
+function TrackPageView() {
+  const { pathname, search } = useLocation()
+
+  useEffect(() => {
+    window._paq = window._paq || []
+    window._paq.push(['setCustomUrl', pathname + search])
+    window._paq.push(['trackPageView'])
+  }, [pathname, search])
+
+  return null
+}
+
 export default function App() {
   return (
     <>
       <ScrollToTop />
+      <TrackPageView />
       <Header />
 
       <main>

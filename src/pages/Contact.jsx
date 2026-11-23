@@ -73,6 +73,18 @@ export default function Contact() {
         throw new Error(result.message || 'Erreur lors de l’envoi.')
       }
 
+      // Only count a lead after the server confirms successful submission.
+      // Tracking must never prevent the confirmation from appearing.
+      try {
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'conversion', {
+            send_to: 'AW-18450784671/XH0LCI-tnL4dEJ_Dgt5E',
+          })
+        }
+      } catch (trackingError) {
+        console.warn('Google Ads conversion tracking unavailable', trackingError)
+      }
+
       form.reset()
       setFormStatus('success')
       setFormMessage(result.message)
